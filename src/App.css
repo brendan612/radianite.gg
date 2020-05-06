@@ -1,3 +1,8 @@
+
+#root {
+  font-family: 'Valorant', Fallback, sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -14,7 +19,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #333;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,10 +27,21 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  z-index: 2;
+  background-image: url(./content/backgrounds/background-blurred.jpg);
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.home-message{
+  border: solid 1px #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px 10px 15px;
+  background-color: rgba(255, 70, 85, .5);
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +51,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: 'Valorant';
+  src: url(./content/fonts/Valorant\ Font.ttf)
 }
